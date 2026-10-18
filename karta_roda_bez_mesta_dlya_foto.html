@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#12221c">
+  <meta name="description" content="Интенсив «Карта Рода» — 11 дней изучения авторского метода ЧакроРодологии через хронально-векторную диагностику. Старт 1 ноября 2026 года. Тарифы от 5 900 ₽.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Карта Рода — интенсив по ЧакроРодологии">
+  <meta property="og:description" content="11 дней • старт 1 ноября 2026 • текстовый формат в Telegram. Программа, тарифы и предзапись.">
+  <title>Карта Рода — интенсив по ЧакроРодологии | Гармония в числах</title>
+  <style>
+    :root {
+      --forest:#12221c; --pine:#1c372b; --pine2:#243c32; --graphite:#1d2526;
+      --plum:#352c38; --indigo:#2a3441; --cream:#f5f0e7; --milk:#e9e9df;
+      --sage:#bdd0bc; --muted:#acb9ad; --terracotta:#c4937b;
+      --stroke:rgba(242,241,230,.15); --lightstroke:rgba(242,241,230,.24);
+      --serif:Georgia,"Times New Roman",serif;
+      --sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:83px}
+    body{margin:0;background:var(--forest);color:var(--cream);font:16px/1.67 var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer}
+    :focus-visible{outline:2px solid var(--terracotta);outline-offset:4px}
+    [hidden]{display:none!important}
+    ::selection{background:var(--sage);color:var(--forest)}
+    .skip{position:absolute;left:12px;top:-100px;z-index:100;padding:9px 15px;background:var(--sage);color:var(--forest)}
+    .skip:focus{top:10px}
+    .wrap{width:min(1160px,calc(100% - 52px));margin-inline:auto}
+    .section{padding:clamp(73px,8.8vw,122px) 0;scroll-margin-top:80px}
+    .eyebrow{display:flex;align-items:center;gap:13px;color:var(--sage);letter-spacing:.17em;font-size:11px;text-transform:uppercase;font-weight:750}
+    .eyebrow::before{content:"";height:1px;width:23px;background:var(--sage)}
+    h1,h2,h3,p{margin:0}
+    h1,h2,.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.045em;line-height:1.11}
+    h1{font-size:clamp(65px,8.7vw,122px);letter-spacing:-.068em;margin:13px 0 17px}
+    h2{font-size:clamp(41px,5.2vw,68px);margin:15px 0 24px}
+    h3{font-size:24px;font-weight:500;line-height:1.3}
+    p{color:#d3dcd3}
+    .lead{font-size:clamp(17px,1.8vw,21px);line-height:1.7;max-width:740px}
+    .muted{color:var(--muted)}
+    .section-intro{max-width:760px;margin-bottom:43px}
+    .section-intro p{font-size:17px;max-width:710px}
+    .accent{color:var(--sage);font-style:italic}
+    .line{border-top:1px solid var(--stroke)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:53px;min-width:158px;padding:14px 25px;border:1px solid transparent;border-radius:100px;text-align:center;font-weight:700;font-size:14px;line-height:1.25;transition:background .18s,transform .18s,border-color .18s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn:active{transform:translateY(0)}
+    .btn-primary{background:var(--sage);color:#14251c}
+    .btn-primary:hover{background:#d7e2d4}
+    .btn-outline{border-color:#ffffff61;color:var(--cream);background:transparent}
+    .btn-outline:hover{border-color:var(--sage);background:#ffffff0c}
+    .btn-dark{background:var(--forest);color:var(--cream)}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}
+    .header{position:sticky;top:0;z-index:50;background:rgba(18,34,28,.95);border-bottom:1px solid var(--stroke);backdrop-filter:blur(20px)}
+    .header-inner{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .logo{display:flex;align-items:center;gap:11px;flex-shrink:0}
+    .logo-mark{height:42px;width:42px;border:1px solid #afc8b0;border-radius:50%;display:grid;place-items:center;color:var(--sage);font:29px var(--serif)}
+    .logo-name{font:20px/1.1 var(--serif);letter-spacing:-.035em}
+    .logo-name span{display:block;font:9px/1.5 var(--sans);letter-spacing:.14em;color:var(--muted);text-transform:uppercase;margin-top:4px}
+    .nav{display:flex;align-items:center;gap:clamp(15px,1.7vw,27px)}
+    .nav a{font-size:12px;font-weight:680;white-space:nowrap;color:#e0e7de}
+    .nav a:hover{color:var(--sage)}
+    .nav .nav-cta{border:1px solid #9db79a;border-radius:100px;padding:11px 17px;color:var(--sage)}
+    .menu-button{display:none;height:43px;width:43px;border:1px solid var(--lightstroke);border-radius:50%;color:var(--cream);background:transparent;font-size:22px;align-items:center;justify-content:center}
+    .hero{position:relative;overflow:hidden;min-height:670px;background:radial-gradient(ellipse 55% 80% at 88% 49%,#285143 0%,transparent 72%),linear-gradient(115deg,#111f1b,#1c3028 70%,#182a2a)}
+    .hero::before{content:"";position:absolute;width:72vw;aspect-ratio:1;border:1px solid #ffffff0f;border-radius:50%;right:-24vw;top:-28vw;box-shadow:0 0 0 10vw #ffffff04,0 0 0 20vw #ffffff03;pointer-events:none}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(35px,5vw,82px);align-items:center;padding:70px 0 85px}
+    .hero h1 small{display:block;font:clamp(21px,2.9vw,34px)/1.3 var(--serif);letter-spacing:-.02em;color:var(--sage);margin-top:12px}
+    .hero .lead{max-width:595px}
+    .hero-meta{display:flex;gap:20px 30px;flex-wrap:wrap;border-top:1px solid var(--stroke);margin-top:35px;padding-top:22px}
+    .hero-meta div{display:flex;gap:8px;align-items:baseline;font-size:13px;color:var(--muted)}
+    .hero-meta strong{color:var(--cream);font-size:16px;font-weight:650}
+    .hero-illustration{position:relative;isolation:isolate;padding:35px 30px 23px;min-height:530px;border:1px solid #ffffff38;border-radius:260px 260px 28px 28px;background:linear-gradient(160deg,#2a4a3ef2,#253331cf 58%,#29323a);box-shadow:0 28px 80px #0003;display:flex;flex-direction:column;align-items:center;text-align:center}
+    .hero-illustration::after{content:"";position:absolute;inset:15px;border:1px solid #ffffff1f;border-radius:240px 240px 20px 20px;z-index:-1}
+    .orbital{height:260px;width:260px;position:relative;display:grid;place-items:center;margin:0 auto 10px}
+    .orbit,.orbital::before,.orbital::after{content:"";position:absolute;border-radius:50%;border:1px solid #aec5ac65}
+    .orbit{inset:18px}
+    .orbital::before{inset:44px}
+    .orbital::after{inset:70px;background:#ffffff06}
+    .orbital .seven{z-index:1;font:110px/.9 var(--serif);color:var(--sage);text-shadow:0 0 40px #adc5aa27}
+    .orbital .dot{position:absolute;border-radius:50%;background:var(--terracotta);height:7px;width:7px}
+    .orbital .dot.d1{left:10px;top:91px}
+    .orbital .dot.d2{right:32px;top:47px}
+    .orbital .dot.d3{bottom:12px;left:102px}
+    .figure-line{width:70%;height:1px;background:var(--lightstroke);margin:16px auto 27px}
+    .hero-illustration h3{font:clamp(29px,3.2vw,39px)/1.15 var(--serif);max-width:320px}
+    .hero-illustration p{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);margin-top:19px}
+    .ribbon{background:#1b3429;border-block:1px solid var(--stroke)}
+    .ribbon-row{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:27px 0}
+    .ribbon-stat{padding:4px 12px 4px 0}
+    .ribbon-stat:not(:last-child){border-right:1px solid var(--stroke)}
+    .ribbon-stat strong{font:29px var(--serif);display:block}
+    .ribbon-stat span{color:var(--muted);font-size:12px}
+    .about-method{background:var(--graphite)}
+    .method-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(35px,8vw,110px)}
+    .method-copy p+p{margin-top:17px}
+    .concept-list{border-top:1px solid var(--stroke)}
+    .concept{display:grid;grid-template-columns:40px 1fr;gap:17px;border-bottom:1px solid var(--stroke);padding:24px 0}
+    .concept i{font:26px var(--serif);color:var(--terracotta);font-style:normal}
+    .concept h3{font-size:21px;margin:0 0 7px}
+    .concept p{font-size:14px;color:var(--muted)}
+    .audience{background:var(--forest)}
+    .audience-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+    .audience-card{min-height:320px;padding:31px;border:1px solid var(--stroke);border-radius:23px;background:#223d31;display:flex;flex-direction:column}
+    .audience-card:nth-child(2){background:var(--indigo)}
+    .audience-card:nth-child(3){background:var(--plum)}
+    .audience-card .no{font:44px var(--serif);color:#c2d4bd;margin-bottom:35px}
+    .audience-card h3{font:30px/1.2 var(--serif);letter-spacing:-.035em;margin-bottom:14px}
+    .audience-card p{font-size:14px;color:#cbd6cc}
+    .audience-card .note{margin-top:auto;padding-top:20px;color:var(--sage);font-size:12px}
+    .outcomes{background:#182c24}
+    .outcome-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .outcome{display:flex;align-items:flex-start;gap:17px;border:1px solid var(--stroke);padding:22px 24px;border-radius:15px;background:#ffffff06}
+    .outcome .tick{font:23px var(--serif);color:var(--terracotta);line-height:1.2}
+    .outcome p{font-size:15px}
+    .program{background:var(--graphite)}
+    .schedule{position:relative;max-width:1080px}
+    .schedule-row{display:grid;grid-template-columns:185px 1fr;gap:42px;border-top:1px solid var(--stroke);padding:26px 0 28px;align-items:start}
+    .schedule-row:last-child{border-bottom:1px solid var(--stroke)}
+    .schedule-date{color:var(--sage);font-size:13px;font-weight:750;text-transform:uppercase;letter-spacing:.03em}
+    .schedule-date span{display:block;color:var(--terracotta);font:34px var(--serif);letter-spacing:-.03em}
+    .schedule-copy h3{font:clamp(23px,2.8vw,30px)/1.28 var(--serif);margin-bottom:10px}
+    .schedule-copy p{font-size:15px;color:var(--muted);max-width:760px}
+    .schedule-copy .module-no{display:inline-block;margin-bottom:11px;color:var(--sage);font-size:11px;letter-spacing:.15em;text-transform:uppercase}
+    .format{background:#152a21}
+    .format-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+    .format-features{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .format-feature{background:#ffffff08;border:1px solid var(--stroke);border-radius:15px;padding:22px;min-height:170px}
+    .format-feature .icon{font:34px var(--serif);color:var(--terracotta);margin-bottom:13px}
+    .format-feature h3{font-size:17px;font-weight:650;margin-bottom:7px}
+    .format-feature p{font-size:13px;color:var(--muted)}
+    .pricing{background:var(--graphite)}
+    .pricing-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+    .price-card{display:flex;flex-direction:column;background:#25382e;border:1px solid var(--lightstroke);border-radius:24px;padding:clamp(23px,2.6vw,35px);min-width:0}
+    .price-card:nth-child(2){background:#283641;border-color:#afc6b277}
+    .price-card:nth-child(3){background:linear-gradient(157deg,#3d3441,#292d39 82%);border-color:#b99b8866}
+    .tier-label{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--sage);margin-bottom:17px}
+    .price-card h3{font:clamp(28px,2.7vw,35px)/1.13 var(--serif);letter-spacing:-.035em;min-height:80px}
+    .price{font:clamp(38px,4vw,50px)/1.2 var(--serif);margin:10px 0 19px;letter-spacing:-.04em}
+    .price-card .summary{font-size:14px;min-height:107px;color:#d3ddd2}
+    .price-card ul{list-style:none;margin:19px 0 29px;padding:0;border-top:1px solid var(--stroke)}
+    .price-card li{position:relative;padding:12px 0 12px 22px;border-bottom:1px solid var(--stroke);font-size:13px;line-height:1.6;color:#d6e0d5}
+    .price-card li::before{content:"+";position:absolute;left:0;color:var(--sage);font-size:17px;top:9px}
+    .price-card .btn{margin-top:auto;width:100%}
+    .price-card .limit{font-size:12px;color:#edc8b6;margin:0 0 13px}
+    .pricing-hint{margin-top:23px;color:var(--muted);font-size:13px}
+    .author{background:#17291f}
+    .author-layout{max-width:860px}
+    .author-layout h2{max-width:830px}
+    .author-layout .lead{max-width:800px}
+    .author p{margin-bottom:18px}
+    .facts-list{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:34px 0 0;padding:0}
+    .facts-list li{padding:18px 0 0;border-top:1px solid var(--stroke);font-size:14px;color:#d4dfd4}
+    .facts-list strong{display:block;margin-bottom:3px;color:var(--cream)}
+    .gift{background:linear-gradient(130deg,#30323c,#254035);border-block:1px solid var(--stroke)}
+    .gift-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:75px;align-items:center}
+    .gift-symbol{font:clamp(140px,20vw,270px)/.85 var(--serif);text-align:center;color:#b6d0b2;letter-spacing:-.09em}
+    .gift p{max-width:640px}
+    .faq{background:var(--graphite)}
+    .faq-list{max-width:940px}
+    details{border-top:1px solid var(--stroke)}
+    details:last-child{border-bottom:1px solid var(--stroke)}
+    summary{cursor:pointer;list-style:none;padding:25px 42px 25px 0;position:relative;font-size:18px;font-weight:550;line-height:1.5}
+    summary::-webkit-details-marker{display:none}
+    summary::after{content:"+";position:absolute;right:6px;top:20px;font:30px var(--serif);color:var(--sage)}
+    details[open] summary::after{content:"−"}
+    details p{font-size:15px;color:var(--muted);padding:0 28px 25px 0;max-width:790px}
+    .final{background:radial-gradient(ellipse at 80% 65%,#315343,transparent 62%),#14251e;padding:clamp(85px,9vw,130px) 0;text-align:center}
+    .final h2{max-width:950px;margin:17px auto 25px}
+    .final p{max-width:680px;margin:0 auto}
+    .final .actions{justify-content:center}
+    .final .date{margin-bottom:22px;color:var(--sage);font:26px var(--serif)}
+    footer{background:#101d18;border-top:1px solid var(--stroke);padding:29px 0 38px}
+    .footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:23px;align-items:center}
+    footer p,footer a{font-size:12px;color:var(--muted)}
+    footer a:hover{color:var(--cream)}
+    .footer-legal{border-top:1px solid var(--stroke);margin-top:21px;padding-top:15px;font-size:12px;color:var(--muted)}
+    @media (max-width:1080px){
+      .nav{gap:14px}.nav a{font-size:11px}.hero-grid{gap:30px}
+      .price-card{padding:23px}.price-card h3{min-height:73px}
+    }
+    @media (max-width:880px){
+      .menu-button{display:inline-flex}
+      .nav{display:none;position:absolute;left:0;right:0;top:100%;background:#172a21;border-bottom:1px solid var(--lightstroke);padding:19px max(26px,calc((100vw - 1160px)/2));flex-direction:column;align-items:stretch;gap:0;box-shadow:0 20px 45px #0005}
+      .nav.open{display:flex}.nav a{font-size:14px;display:block;padding:11px 4px}
+      .nav .nav-cta{text-align:center;margin-top:10px;padding:13px}
+      .hero-grid,.method-grid,.format-grid,.gift-layout{grid-template-columns:1fr;gap:37px}
+      .hero-grid{padding:60px 0 75px}
+      .hero-illustration{max-width:530px;margin-inline:auto;width:100%;min-height:450px}
+      .orbital{height:230px;width:230px}
+      .audience-cards{grid-template-columns:repeat(2,1fr)}.audience-card:nth-child(3){grid-column:1/-1;min-height:250px}
+      .pricing-cards{grid-template-columns:1fr}.price-card h3,.price-card .summary{min-height:auto}.price-card{padding:34px}
+      .price-card ul{display:grid;grid-template-columns:repeat(2,1fr);gap:0 22px}
+      .gift-symbol{display:none}
+    }
+    @media (max-width:590px){
+      .facts-list{grid-template-columns:1fr;gap:6px}
+
+      body{font-size:15px}
+      .wrap{width:calc(100% - 34px)}
+      .section{padding:69px 0}
+      .header-inner{min-height:68px}
+      .logo-mark{height:37px;width:37px;font-size:26px}
+      .logo-name{font-size:17px}
+      h1{font-size:clamp(57px,15.5vw,82px)}
+      h1 small{max-width:320px}
+      h2{font-size:clamp(39px,10.8vw,53px)}
+      .hero{min-height:0}
+      .hero-grid{padding:51px 0 67px;gap:36px}
+      .hero .lead{font-size:17px}
+      .hero-illustration{min-height:380px;border-radius:200px 200px 22px 22px;padding:18px 20px}
+      .orbital{width:195px;height:195px;margin:0 auto 4px}
+      .orbital .seven{font-size:86px}
+      .figure-line{margin:7px auto 20px}
+      .hero-illustration h3{font-size:29px}
+      .hero-meta{gap:12px 25px}
+      .actions .btn{width:100%}
+      .ribbon-row{gap:6px}
+      .ribbon-stat{padding-right:5px}.ribbon-stat strong{font-size:24px}.ribbon-stat span{font-size:10px}
+      .audience-cards,.outcome-grid,.format-features{grid-template-columns:1fr}
+      .audience-card,.audience-card:nth-child(3){grid-column:auto;min-height:235px}
+      .audience-card .no{margin-bottom:20px}
+      .audience-card h3{font-size:27px}
+      .schedule-row{grid-template-columns:1fr;gap:10px;padding:24px 0 27px}
+      .schedule-date span{font-size:25px;display:inline;margin-right:9px}
+      .schedule-date{font-size:12px}
+      .schedule-copy h3{font-size:26px}
+      .format-feature{min-height:0}
+      .price-card{padding:26px}.price-card ul{display:block}
+      .gift-layout{gap:0}
+      .final{padding:76px 0}
+      .final .date{font-size:21px}
+      summary{font-size:16px;padding:22px 34px 22px 0}
+      .footer-row{align-items:flex-start;flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+<a href="#main" class="skip">Перейти к содержимому</a>
+<header class="header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="Гармония в числах — наверх">
+      <span class="logo-mark" aria-hidden="true">7</span>
+      <span class="logo-name">Гармония в числах<span>Авторские методы · Айсулу</span></span>
+    </a>
+    <button id="menuButton" class="menu-button" aria-controls="siteNav" aria-expanded="false" aria-label="Открыть меню">☰</button>
+    <nav id="siteNav" class="nav" aria-label="Основное меню">
+      <a href="#about">О методе</a><a href="#audience">Для кого</a><a href="#program">Программа</a>
+      <a href="#format">Формат</a><a href="#tariffs">Тарифы</a><a href="#author">Обо мне</a><a href="#faq">Вопросы</a>
+      <a class="nav-cta" target="_blank" rel="noopener noreferrer" href="https://t.me/+7Zvtijw1WUg4MDgy">Предзапись ↗</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Авторский интенсив по ЧакроРодологии</div>
+        <h1>Карта<br>Рода<small>Увидеть взаимосвязи. Научиться исследовать.</small></h1>
+        <p class="lead">Изучите родовые сценарии через систему чакр и хронально-векторную диагностику (ХВД). В течение 11 дней я познакомлю вас со своим методом — для самостоятельного изучения или дальнейшего применения в консультировании.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://t.me/+7Zvtijw1WUg4MDgy" target="_blank" rel="noopener noreferrer">Перейти в предзапись <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="#program">Изучить программу <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>01.11.2026</strong> начало обучения</div>
+          <div><strong>11 дней</strong> продолжительность</div>
+          <div><strong>от 5 900 ₽</strong> участие</div>
+        </div>
+      </div>
+      <div class="hero-illustration" aria-label="Декоративная схема семи уровней авторского метода">
+        <div class="orbital" aria-hidden="true"><span class="orbit"></span><span class="seven">7</span><span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span></div>
+        <div class="figure-line"></div>
+        <h3>Чакральная система.<br>История рода.<br>Числовые коды.</h3>
+        <p>ЧакроРодология × ХВД</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon">
+    <div class="wrap ribbon-row">
+      <div class="ribbon-stat"><strong>11</strong><span>дней интенсива</span></div>
+      <div class="ribbon-stat"><strong>6</strong><span>последовательных тем</span></div>
+      <div class="ribbon-stat"><strong>4</strong><span>потока уже прошли</span></div>
+    </div>
+  </div>
+
+  <section class="section about-method" id="about">
+    <div class="wrap method-grid">
+      <div class="method-copy">
+        <div class="eyebrow">Мой авторский подход</div>
+        <h2>Что такое <span class="accent">ЧакроРодология</span></h2>
+        <p>Я создала ЧакроРодологию, объединив знания родологии с хронально-векторной диагностикой (ХВД).</p>
+        <p>В основе моего подхода — исследование родовых сценариев через чакральные показатели, поколения и числовые коды карты рождения. На интенсиве я последовательно познакомлю вас с принципами этой системы и покажу, как соединять изученные показатели в анализе.</p>
+        <p>Для меня важно, чтобы участники не просто запоминали отдельные значения, а понимали логику работы с картой рождения в рамках метода.</p>
+      </div>
+      <div class="concept-list">
+        <div class="concept"><i>01</i><div><h3>Родовая система по ХВД</h3><p>Знакомство с принципами, на которых строится исследование связей между поколениями.</p></div></div>
+        <div class="concept"><i>02</i><div><h3>Чакральные показатели</h3><p>Работа с ресурсностью, избытком и дефицитом энергии в рамках авторской системы.</p></div></div>
+        <div class="concept"><i>03</i><div><h3>Родовые линии</h3><p>Изучение показателей по отцовской и материнской линиям, а также темы передачи следующим поколениям.</p></div></div>
+        <div class="concept"><i>04</i><div><h3>Применение метода</h3><p>Связывание показателей между собой и подготовка к структурированному разбору карты рождения.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section audience" id="audience">
+    <div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow">Кому подойдёт</div>
+        <h2>Разные цели.<br><span class="accent">Один метод исследования.</span></h2>
+        <p>Интенсив рассчитан и на первое знакомство с ЧакроРодологией, и на тех, кто хочет использовать метод в своей профессиональной работе.</p>
+      </div>
+      <div class="audience-cards">
+        <article class="audience-card"><span class="no">01</span><h3>Для понимания себя</h3><p>Если вы хотите исследовать повторяющиеся жизненные ситуации, отношения с родителями, личные сценарии, вопросы предназначения и финансовой сферы.</p><span class="note">Подойдёт тариф «Для себя»</span></article>
+        <article class="audience-card"><span class="no">02</span><h3>Для расширения практики</h3><p>Если вы уже консультируете по другой системе и ищете дополнительный структурированный инструмент для изучения родовых сценариев.</p><span class="note">Подойдёт тариф «Практик»</span></article>
+        <article class="audience-card"><span class="no">03</span><h3>Для начала консультирования</h3><p>Если хотите изучить алгоритм консультации, потренироваться на реальных клиентах и получить обратную связь по проведённым разборам.</p><span class="note">Подойдёт «Профессиональный старт»</span></article>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin-top:23px">В рамках интенсива также рассматривается, как в ЧакроРодологии исследуются темы телесных и психологических проявлений. Метод не заменяет медицинскую или психологическую помощь.</p>
+    </div>
+  </section>
+
+  <section class="section outcomes" id="outcomes">
+    <div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow">Результат обучения</div>
+        <h2>Что вы будете <span class="accent">изучать и практиковать</span></h2>
+        <p>Я выстроила программу от основных принципов родовой системы до применения ЧакроРодологии в консультировании.</p>
+      </div>
+      <div class="outcome-grid">
+        <div class="outcome"><span class="tick">✦</span><p>Чтение родовых показателей через систему чакр по карте рождения.</p></div>
+        <div class="outcome"><span class="tick">✦</span><p>Определение ресурсности: где проявляются избыток и дефицит энергии.</p></div>
+        <div class="outcome"><span class="tick">✦</span><p>Анализ родовых сценариев по отцовской и материнской линиям.</p></div>
+        <div class="outcome"><span class="tick">✦</span><p>Исследование проявлений сценариев в отношениях и жизненных ситуациях в рамках метода.</p></div>
+        <div class="outcome"><span class="tick">✦</span><p>Разбор задачи Будущего воплощения и темы передачи следующим поколениям.</p></div>
+        <div class="outcome"><span class="tick">✦</span><p>Соединение показателей карты рождения и формулирование выводов для консультации.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section program" id="program">
+    <div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow">1–11 ноября 2026 года</div>
+        <h2>Программа интенсива<br><span class="accent">«Карта Рода»</span></h2>
+        <p>Шесть тем, которые последовательно раскрывают метод — от основ родовой системы до итоговой практической работы.</p>
+      </div>
+      <div class="schedule">
+        <article class="schedule-row">
+          <div class="schedule-date"><span>01–02</span> ноября</div>
+          <div class="schedule-copy"><span class="module-no">Тема 01</span><h3>Принцип родовой системы по ХВД</h3><p>Изучение принципов родовой системы в рамках хронально-векторной диагностики.</p></div>
+        </article>
+        <article class="schedule-row">
+          <div class="schedule-date"><span>03–04</span> ноября</div>
+          <div class="schedule-copy"><span class="module-no">Тема 02</span><h3>Ресурсность по родовым задачам в карте рождения</h3><p>Как определять ресурсность и видеть, где человеку передался избыток энергии, а где — дефицит.</p></div>
+        </article>
+        <article class="schedule-row">
+          <div class="schedule-date"><span>05–06</span> ноября</div>
+          <div class="schedule-copy"><span class="module-no">Тема 03</span><h3>Род по отцу</h3><p>Изучение родовых показателей по отцовской линии и их значения в карте рождения.</p></div>
+        </article>
+        <article class="schedule-row">
+          <div class="schedule-date"><span>07–08</span> ноября</div>
+          <div class="schedule-copy"><span class="module-no">Тема 04</span><h3>Род по матери</h3><p>Изучение родовых показателей по материнской линии и их значения в карте рождения.</p></div>
+        </article>
+        <article class="schedule-row">
+          <div class="schedule-date"><span>09–10</span> ноября</div>
+          <div class="schedule-copy"><span class="module-no">Тема 05</span><h3>Задача Будущего воплощения</h3><p>Понимание того, что человек передаёт следующим поколениям и какие сценарии могут продолжаться через него — в рамках авторского метода.</p></div>
+        </article>
+        <article class="schedule-row">
+          <div class="schedule-date"><span>11</span> ноября</div>
+          <div class="schedule-copy"><span class="module-no">Тема 06</span><h3>Как консультировать по ЧакроРодологии</h3><p>Итоговая практическая работа, демонстрирующая понимание метода и умение применять его в консультировании. Условия обратной связи и сертификата зависят от тарифа.</p></div>
+        </article>
+      </div>
+      <div class="actions"><a href="https://t.me/+7Zvtijw1WUg4MDgy" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Перейти в предзапись ↗</a></div>
+    </div>
+  </section>
+
+  <section class="section format" id="format">
+    <div class="wrap format-grid">
+      <div>
+        <div class="eyebrow">Как проходит обучение</div>
+        <h2>Удобный <span class="accent">текстовый формат</span></h2>
+        <p class="lead">Я провожу интенсив в закрытом Telegram-канале. Материалы выходят в виде текстовых публикаций и файлов — вы изучаете их в удобное время, без обязательных Zoom-встреч.</p>
+        <p style="margin-top:20px">Все 11 дней вы проходите темы последовательно. Доступ к материалам и возможность задавать вопросы зависят от выбранного тарифа.</p>
+      </div>
+      <div class="format-features">
+        <div class="format-feature"><div class="icon">01</div><h3>Закрытый Telegram-канал</h3><p>Одна удобная площадка для учебных материалов.</p></div>
+        <div class="format-feature"><div class="icon">02</div><h3>Публикации и файлы</h3><p>Текстовый формат, к которому можно возвращаться.</p></div>
+        <div class="format-feature"><div class="icon">03</div><h3>В своём темпе</h3><p>Нет необходимости подключаться к созвонам по расписанию.</p></div>
+        <div class="format-feature"><div class="icon">04</div><h3>Обратная связь</h3><p>Предусмотрена в тарифах «Практик» и «Профессиональный старт».</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing" id="tariffs">
+    <div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow">Варианты участия</div>
+        <h2>Выберите свой <span class="accent">формат обучения</span></h2>
+        <p>Одна программа — три уровня поддержки и практического применения метода.</p>
+      </div>
+      <div class="pricing-cards">
+        <article class="price-card">
+          <div class="tier-label">Самостоятельное изучение</div>
+          <h3>Для себя</h3><div class="price">5 900 ₽</div>
+          <p class="summary">Чтобы познакомиться с методом, исследовать родовые сценарии и работать с материалами самостоятельно.</p>
+          <ul>
+            <li>Все материалы интенсива</li>
+            <li>Текстовые публикации и файлы</li>
+            <li>Доступ в течение 2 месяцев</li>
+            <li>Самостоятельное изучение</li>
+            <li>Без обратной связи</li>
+          </ul>
+          <a href="https://t.me/+7Zvtijw1WUg4MDgy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Предзапись на тариф Для себя">Перейти в предзапись ↗</a>
+        </article>
+        <article class="price-card">
+          <div class="tier-label">С обратной связью</div>
+          <h3>Практик</h3><div class="price">7 900 ₽</div>
+          <p class="summary">Чтобы глубже освоить материал и подготовиться к применению метода в консультировании.</p>
+          <ul>
+            <li>Вся программа интенсива</li>
+            <li>Обратная связь в процессе обучения</li>
+            <li>Алгоритм проведения консультации</li>
+            <li>Примеры консультаций</li>
+            <li>Ещё 2 недели обратной связи: 12–25 ноября</li>
+            <li>Бессрочный доступ к материалам</li>
+            <li>Итоговая практическая работа — первая консультация</li>
+            <li>Сертификат после выполнения практической работы</li>
+          </ul>
+          <a href="https://t.me/+7Zvtijw1WUg4MDgy" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Предзапись на тариф Практик">Перейти в предзапись ↗</a>
+        </article>
+        <article class="price-card">
+          <div class="tier-label">С практикой на клиентах</div>
+          <h3>Профессиональный старт</h3><div class="price">9 900 ₽</div>
+          <p class="summary">Для тех, кто хочет перейти от теории к самостоятельным консультациям с обратной связью по результатам.</p>
+          <p class="limit">Количество мест ограничено</p>
+          <ul>
+            <li>Всё из тарифа «Практик»</li>
+            <li>Самостоятельное консультирование реальных клиентов</li>
+            <li>Обратная связь от меня по результатам консультаций</li>
+            <li>Упоминание вашего блога в моих Stories в Instagram</li>
+            <li>Бессрочный доступ к материалам</li>
+            <li>Сертификат после выполнения итоговой работы</li>
+          </ul>
+          <a href="https://t.me/+7Zvtijw1WUg4MDgy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" aria-label="Предзапись на тариф Профессиональный старт">Перейти в предзапись ↗</a>
+        </article>
+      </div>
+      <p class="pricing-hint">Кнопки ведут в Telegram-предзапись. Оплата на этом сайте не производится.</p>
+    </div>
+  </section>
+
+  <section class="section author" id="author">
+    <div class="wrap author-layout">
+        <div class="eyebrow">Давайте знакомиться</div>
+        <h2>Меня зовут <span class="accent">Айсулу</span></h2>
+        <p class="lead">Я — автор метода ЧакроРодология, специалист и преподаватель ЧакроНумерологии.</p>
+        <p>Я работаю в нумерологии с 2020 года, а с 2023 года преподаю. За это время я провела сотни консультаций и обучила более 100 учеников ЧакроНумерологии с нуля.</p>
+        <p>Я также работала над развитием системы ХВД, разработала методы профориентации по дате рождения и анализа теневой стороны типологии, создала курс «Дети в ЧакроНумерологии».</p>
+        <p>На интенсиве «Карта Рода» я делюсь структурой своего подхода и показываю, как использовать его для последовательного исследования родовых сценариев.</p>
+        <ul class="facts-list">
+          <li><strong>С 2020 года</strong> — в нумерологии</li>
+          <li><strong>С 2023 года</strong> — в преподавании</li>
+          <li><strong>Более 100 учеников</strong> — изучили ЧакроНумерологию с нуля</li>
+        </ul>
+    </div>
+  </section>
+
+  <section class="section gift">
+    <div class="wrap gift-layout">
+      <div class="gift-symbol" aria-hidden="true">✧</div>
+      <div>
+        <div class="eyebrow">Для участников предзаписи</div>
+        <h2>Я приготовила <span class="accent">подарок</span></h2>
+        <p class="lead">Я люблю удивлять учеников приятными сюрпризами. На этот раз я тоже приготовила кое-что для тех, кто присоединится к предзаписи и затем приобретёт интенсив «Карта Рода».</p>
+        <p style="margin-top:14px">Что именно — пока сохраню в секрете.</p>
+        <div class="actions"><a class="btn btn-primary" href="https://t.me/+7Zvtijw1WUg4MDgy" target="_blank" rel="noopener noreferrer">Присоединиться к предзаписи ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq" id="faq">
+    <div class="wrap">
+      <div class="section-intro">
+        <div class="eyebrow">Ответы на вопросы</div>
+        <h2>Всё самое <span class="accent">важное</span></h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>Нужна ли специальная подготовка?</summary><p>Нет. Я выстроила программу так, чтобы познакомить с ключевыми принципами ЧакроРодологии последовательно, начиная с родовой системы по ХВД. Интенсив подойдёт и тем, кто только начинает изучать метод.</p></details>
+        <details><summary>В каком формате проходит обучение?</summary><p>Я публикую учебные материалы в закрытом Telegram-канале в виде текстовых публикаций и файлов. Онлайн-встречи и Zoom для прохождения интенсива не требуются.</p></details>
+        <details><summary>Можно ли задавать вопросы?</summary><p>В тарифе «Для себя» обратная связь не предусмотрена. В тарифах «Практик» и «Профессиональный старт» можно задавать вопросы по материалам и получать разъяснения. Дополнительная обратная связь в общем чате — с 12 по 25 ноября 2026 года.</p></details>
+        <details><summary>Как долго будут доступны материалы?</summary><p>На тарифе «Для себя» — 2 месяца. На тарифах «Практик» и «Профессиональный старт» — бессрочно.</p></details>
+        <details><summary>Кто получает сертификат?</summary><p>На тарифах «Практик» и «Профессиональный старт» сертификат предусмотрен после выполнения итоговой практической работы — первой консультации по ЧакроРодологии. Тариф «Для себя» не предусматривает сертификацию.</p></details>
+        <details><summary>Чем отличается «Профессиональный старт» от «Практика»?</summary><p>Кроме всех условий тарифа «Практик», этот вариант включает самостоятельное консультирование реальных клиентов, мою обратную связь по результатам консультаций и упоминание вашего блога в моих Stories в Instagram.</p></details>
+        <details><summary>Как записаться на интенсив?</summary><p>Нажмите «Перейти в предзапись» на этой странице. Откроется ссылка-приглашение в Telegram. Платёжная форма на сайте не подключена.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" id="join">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center">Приглашение на интенсив</div>
+      <h2>«Карта Рода» — начните знакомство с <span class="accent">ЧакроРодологией</span></h2>
+      <div class="date">Старт — 1 ноября 2026 года</div>
+      <p class="lead">Я приглашаю вас на 11 дней последовательного изучения родовых сценариев через систему чакр и ХВД. Выберите подходящий тариф и присоединяйтесь к предзаписи.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://t.me/+7Zvtijw1WUg4MDgy" target="_blank" rel="noopener noreferrer">Перейти в предзапись ↗</a>
+        <a class="btn btn-outline" href="#tariffs">Сравнить тарифы ↑</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-row">
+      <div><div class="serif" style="font-size:25px">Гармония в числах</div><p>Айсулу Абдигайпова · Интенсив «Карта Рода»</p></div>
+      <a href="https://t.me/+7Zvtijw1WUg4MDgy" target="_blank" rel="noopener noreferrer">Предзапись в Telegram ↗</a>
+      <a href="#top">Вернуться наверх ↑</a>
+    </div>
+    <div class="footer-legal">Информационная страница интенсива. Переход в предзапись не является оплатой. Условия оформления покупки и необходимые юридические документы должны быть представлены до приёма платежей.</div>
+  </div>
+</footer>
+<script>
+  const menuButton=document.getElementById('menuButton');
+  const siteNav=document.getElementById('siteNav');
+  menuButton.addEventListener('click',()=>{
+    const open=siteNav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded',String(open));
+    menuButton.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');
+    menuButton.textContent=open?'×':'☰';
+  });
+  siteNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{
+    siteNav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded','false');
+    menuButton.setAttribute('aria-label','Открыть меню');
+    menuButton.textContent='☰';
+  }));
+  window.addEventListener('resize',()=>{if(window.innerWidth>880){siteNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Открыть меню');menuButton.textContent='☰'}});
+</script>
+</body>
+</html>
