@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#13241e" name="theme-color"/>
+<title>Интенсив «Карта Рода»</title>
+<meta content="Научитесь анализировать родовые сценарии и понимать, как они связаны с предназначением человека, отношениями и финансовой сферой. Освойте авторский метод Айсулу Абдигайповой за 11 дней — для самостоятельной работы и применения в консультировании. Старт — 1 ноября 2026 года." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Интенсив «Карта Рода»" property="og:title"/>
+<meta content="Освойте авторский метод Айсулу Абдигайповой за 11 дней — для самостоятельной работы и применения в консультировании. Старт — 1 ноября 2026 года." property="og:description"/>
+<style>
+:root{
+ --forest:#13241e;--forest-deep:#101e19;--pine:#20392e;--pine-mid:#294135;
+ --graphite:#20292a;--plum:#39303d;--indigo:#293844;--cream:#f4f0e8;
+ --milk:#e9e6de;--sage:#b8cdb8;--pale:#d3e0d3;--muted:#adbbaf;
+ --terracotta:#bf927b;--border:rgba(224,233,217,.18);
+ --sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+ --serif:Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{margin:0;background:var(--forest-deep);color:var(--cream);font:16px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+p,h1,h2,h3{margin:0}
+p{color:#dae2d8}
+h1,h2,h3{font-family:var(--serif);font-weight:400}
+h1,h2{line-height:1.1;letter-spacing:-.048em}
+h3{line-height:1.26}
+em{font-weight:400;color:var(--sage)}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--terracotta);outline-offset:4px}
+.container{width:min(1140px,calc(100% - 48px));margin:auto}
+.skip-link{position:fixed;top:-100px;left:16px;padding:10px 15px;color:var(--forest);background:var(--sage);z-index:99}
+.skip-link:focus{top:12px}
+.site-header{position:sticky;top:0;z-index:55;background:rgba(17,31,25,.97);border-bottom:1px solid var(--border);backdrop-filter:blur(14px)}
+.header-inner{min-height:79px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;gap:12px;align-items:center;flex-shrink:0}
+.brand strong{font:22px/1.1 var(--serif);display:block;letter-spacing:-.035em}
+.brand small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.11em;font-size:10px;margin-top:5px}
+.nav{display:flex;gap:clamp(12px,1.6vw,25px);align-items:center}
+.nav a:not(.btn){font-size:13px;color:#e0e7dd;font-weight:600;white-space:nowrap}
+.nav a:hover{color:var(--sage)}
+.menu-toggle{display:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:15px;min-height:52px;border:1px solid transparent;border-radius:100px;background:var(--sage);color:#15241b;padding:13px 23px;text-align:center;font-weight:750;font-size:14px;line-height:1.25;white-space:normal;transition:background .2s,transform .2s}
+.btn:hover{background:#d2e0d0;transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--cream);border-color:#bbceba74}
+.btn-outline:hover{background:#ffffff12;color:var(--cream)}
+.nav .nav-cta{padding:12px 17px;min-height:43px;font-size:12px}
+.kicker{display:flex;align-items:center;gap:13px;letter-spacing:.17em;text-transform:uppercase;color:var(--sage);font-size:11px;font-weight:750;margin-bottom:15px}
+.kicker::before{content:"";display:inline-block;width:23px;height:1px;background:currentColor;flex-shrink:0}
+.hero{background:radial-gradient(ellipse 64% 95% at 84% 37%,#2c5240 0,transparent 68%),linear-gradient(120deg,#101f1b,#192d26);overflow:hidden}
+.hero-grid{min-height:645px;padding:80px 0 96px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:clamp(30px,5vw,90px)}
+.hero h1{font-size:clamp(70px,8.6vw,117px);margin:0 0 25px}
+.hero h1 em{font-style:italic}
+.hero-lead{font-size:clamp(19px,2.1vw,23px);line-height:1.58;max-width:640px;color:#f0f2e9}
+.hero-sub{font-size:16px;line-height:1.7;margin-top:22px;max-width:600px;color:#cddacd}
+.hero-date{margin:27px 0 0;font-size:15px;color:#c4d8c5}
+.hero-date strong{font-weight:750;color:var(--cream)}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.hero-art{justify-self:end;position:relative;width:min(100%,390px);min-height:455px;border:1px solid #b9cdb851;border-radius:195px 195px 18px 18px;background:linear-gradient(155deg,#304f3e,#2d3c39 60%,#2e3240);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 20px 55px #080e0a38}
+.hero-art:before{content:"";position:absolute;inset:14px;border:1px solid #c7d3c626;border-radius:185px 185px 12px 12px}
+.hero-art .arc{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);border:1px solid #c5d7bb30;border-radius:50%;width:245px;height:245px}
+.hero-art .arc-two{width:300px;height:300px}
+.hero-art-number{position:relative;font:135px/1 var(--serif);color:var(--sage);letter-spacing:-.08em;margin-top:30px}
+.hero-art-text{position:relative;color:#eff4ea;font:21px var(--serif)}
+.hero-art-rule{width:90px;border-top:1px solid #d7e3d35f;margin:27px auto 19px}
+.hero-art-title{position:relative;font:24px/1.3 var(--serif);text-align:center;color:#ebeee5}
+.section{padding:clamp(70px,8.5vw,118px) 0;scroll-margin-top:80px}
+.section-head{margin-bottom:38px;max-width:850px}
+.section-head h2{font-size:clamp(38px,5.2vw,69px)}
+.section-author{background:#1a2d24}
+.section-author .section-head h2{max-width:900px}
+.author-layout{max-width:1010px}
+.author-intro{font-size:21px;color:#e8eee4;margin-bottom:25px}
+.bio-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 34px}
+.bio-list li{border-top:1px solid var(--border);padding:16px 8px 18px 0;font-size:15px;color:#d8e3d7}
+.bio-list li:last-child{grid-column:1/-1;color:#e8efe4}
+.section-audience{background:#202b2a}
+.audience-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;padding:0;margin:0}
+.audience-list li{padding:21px 24px 21px 38px;background:#263d33;border:1px solid var(--border);border-radius:14px;color:#e0e8de;position:relative;line-height:1.6}
+.audience-list li::before{content:"";width:10px;height:1px;background:var(--terracotta);position:absolute;top:34px;left:18px}
+.section-program{background:#15251f}
+.program-list{border-top:1px solid var(--border);max-width:1090px}
+.program-row{display:grid;grid-template-columns:190px 1fr;gap:36px;padding:25px 3px 27px;border-bottom:1px solid var(--border)}
+.program-date{font-size:14px;color:var(--sage);font-weight:750;white-space:nowrap;padding-top:9px}
+.program-content h3{font-size:clamp(22px,2.5vw,30px);margin-bottom:10px;color:var(--cream)}
+.program-content p{font-size:15px;color:#bacdbf;max-width:800px}
+.section-outcomes{background:#2a3440}
+.outcomes-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;list-style:none;margin:0;padding:0}
+.outcomes-list li{position:relative;border:1px solid var(--border);border-radius:14px;padding:22px 25px 22px 47px;font-size:15px;line-height:1.66;background:#ffffff08;color:#e8ece8}
+.outcomes-list li::before{position:absolute;content:"✦";top:19px;left:19px;color:var(--terracotta);font-size:15px}
+.section-reviews{background:#1c2c26}
+.reviews-copy{max-width:830px;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:30px 0 10px}
+.reviews-copy p{font-size:18px;margin-bottom:20px}
+.section-format{background:var(--graphite)}
+.format-list{max-width:920px;display:grid;grid-template-columns:1fr 1fr;gap:0 42px}
+.format-list p{padding:21px 0;border-top:1px solid var(--border);font-size:16px}
+.format-list p:last-child{grid-column:1/-1}
+.section-tariffs{background:#12251d}
+.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;align-items:stretch}
+.price-card{display:flex;flex-direction:column;border-radius:18px;padding:27px 26px;background:#24372d;border:1px solid #bcd0b847;min-width:0}
+.price-card.tier-2{background:#2a3843;border-color:#b7c9bc85}
+.price-card.tier-3{background:#39313e;border-color:#be9c8782}
+.price-card h3{font-size:clamp(29px,2.8vw,36px);min-height:76px}
+.price-card .price{font:clamp(36px,3.6vw,47px)/1.2 var(--serif);color:var(--cream);margin:9px 0 19px;white-space:nowrap}
+.tier-description{font-size:14px;line-height:1.65;min-height:142px}
+.included{font-size:12px;font-weight:750;color:var(--sage);letter-spacing:.08em;text-transform:uppercase;margin:25px 0 7px}
+.tier-list{list-style:none;padding:0;margin:0 0 25px}
+.tier-list li{padding:11px 0;border-bottom:1px solid var(--border);color:#e4e8e1;font-size:13px;line-height:1.6}
+.tier-list li:before{content:"—";color:var(--sage);padding-right:9px}
+.tier-button{margin-top:auto;width:100%;font-size:13px}
+.availability{color:#ead0bb;font-size:12px;font-weight:600;margin:2px 0 0}
+.section-faq{background:#202b2a}
+.faq-list{max-width:970px}
+details{border-top:1px solid var(--border)}
+details:last-child{border-bottom:1px solid var(--border)}
+summary{display:flex;align-items:center;justify-content:space-between;gap:25px;cursor:pointer;list-style:none;padding:23px 3px;font-size:18px;color:var(--cream);font-weight:600}
+summary::-webkit-details-marker{display:none}
+summary .plus{font-size:24px;color:var(--sage);font-weight:300;transition:transform .2s}
+details[open] summary .plus{transform:rotate(45deg)}
+.answer{max-width:830px;padding:0 8px 24px 3px}
+.answer p{margin:0 0 17px;color:#d4e1d6;font-size:15px}
+.faq-bullets{padding-left:22px;margin:0;color:#d4e1d6}
+.faq-bullets li{padding:4px 0}
+.section-gift{background:radial-gradient(circle at 83% 37%,#3a4d44,transparent 48%),linear-gradient(120deg,#31313e,#1f3a2e)}
+.gift-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(210px,.6fr);gap:55px;align-items:center}
+.section-gift h2{font-size:clamp(43px,5.9vw,75px);max-width:800px;margin-bottom:28px}
+.section-gift h2 span{font:34px var(--sans)}
+.section-gift p:not(.kicker){font-size:17px;max-width:670px;margin:0 0 18px}
+.section-gift .gift-date{color:var(--sage);font-weight:700;margin:26px 0!important}
+.section-gift .btn{margin-top:4px}
+.gift-decor{border:1px solid #e1e7df38;border-radius:50% 50% 14px 14px;min-height:335px;display:flex;align-items:center;justify-content:center;text-align:center;font:56px/1.1 var(--serif);color:var(--sage);background:#ffffff09}
+.footer{background:#101c18;border-top:1px solid var(--border)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;padding:28px 0;gap:24px}
+.footer-brand{font:22px var(--serif)}
+.back-to-top{font-size:13px;color:var(--sage)}
+@media(max-width:1030px){
+ .hero-grid{grid-template-columns:1fr .82fr}
+ .price-grid{grid-template-columns:1fr 1fr}
+ .tier-3{grid-column:1/-1}
+ .tier-description{min-height:0}
+ .nav{gap:13px}
+}
+@media(max-width:800px){
+ html{scroll-padding-top:80px}
+ .container{width:min(100% - 36px,1140px)}
+ .header-inner{min-height:73px}
+ .brand strong{font-size:19px}
+ .menu-toggle{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:45px;height:42px;background:none;border:1px solid var(--border);border-radius:10px;color:var(--cream);cursor:pointer}
+ .menu-toggle span{display:block;height:1.5px;width:19px;background:currentColor}
+ .nav{display:none;position:absolute;left:0;right:0;top:100%;background:#172c22;padding:20px 24px 26px;border-bottom:1px solid var(--border);flex-direction:column;align-items:stretch;gap:0;box-shadow:0 15px 25px #0003}
+ .nav.is-open{display:flex}
+ .nav a:not(.btn){font-size:15px;padding:12px 0;border-bottom:1px solid var(--border)}
+ .nav .nav-cta{margin-top:16px}
+ .hero-grid{grid-template-columns:1fr;padding:64px 0 73px;gap:42px}
+ .hero-art{width:100%;min-height:265px;border-radius:135px 135px 18px 18px}
+ .hero-art .arc{width:160px;height:160px;top:43%}
+ .hero-art .arc-two{width:210px;height:210px}
+ .hero-art-number{font-size:97px;margin-top:5px}
+ .hero-art-rule{margin:12px auto}
+ .hero-art-title{font-size:18px}
+ .section{padding:73px 0}
+ .section-head{margin-bottom:27px}
+ .bio-list,.audience-list,.outcomes-list,.format-list{grid-template-columns:1fr}
+ .bio-list li:last-child,.format-list p:last-child{grid-column:auto}
+ .program-row{grid-template-columns:120px 1fr;gap:19px}
+ .gift-layout{grid-template-columns:1fr}
+ .gift-decor{display:none}
+}
+@media(max-width:600px){
+ .container{width:calc(100% - 36px)}
+ .hero-grid{padding:52px 0 66px}
+ .hero h1{font-size:clamp(59px,16vw,86px)}
+ .hero-lead{font-size:18px}
+ .hero-sub{font-size:15px}
+ .hero-buttons{display:grid;grid-template-columns:1fr;gap:10px}
+ .hero-buttons .btn{width:100%}
+ .hero-art{min-height:250px}
+ .section-head h2{font-size:clamp(36px,10.2vw,54px)}
+ .author-intro{font-size:19px}
+ .bio-list li{font-size:15px}
+ .program-row{display:block;padding:23px 0}
+ .program-date{margin-bottom:8px;padding:0}
+ .program-content h3{font-size:26px}
+ .price-grid{grid-template-columns:1fr}
+ .tier-3{grid-column:auto}
+ .price-card{padding:26px 22px}
+ .price-card h3{min-height:0}
+ .tier-list li{font-size:14px}
+ .section-gift h2{font-size:44px}
+ .gift-layout{gap:0}
+ .footer-brand{font-size:20px}
+}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ .btn,.plus{transition:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержанию</a>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Карта Рода — к началу страницы" class="brand" href="#top">
+<span><strong>Карта Рода</strong><small>Интенсив «Карта Рода»</small></span>
+</a>
+<button aria-controls="site-nav" aria-expanded="false" aria-label="Открыть меню" class="menu-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Навигация по сайту" class="nav" id="site-nav">
+<a href="#author">Автор метода</a><a href="#audience">Для кого</a><a href="#program">Программа</a><a href="#tariffs">Тарифы</a><a href="#faq">Вопросы</a>
+<a class="btn btn-outline nav-cta" href="https://t.me/+7Zvtijw1WUg4MDgy" rel="noopener noreferrer" target="_blank">Предзапись<span aria-hidden="true">↗</span></a>
+</nav>
+</div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+<div class="container hero-grid">
+<div class="hero-content">
+<p class="kicker">Интенсив «Карта Рода»</p>
+<h1>Карта <em>Рода</em></h1>
+<p class="hero-lead">Научитесь анализировать родовые сценарии и понимать, как они связаны с предназначением человека, отношениями и финансовой сферой</p>
+<p class="hero-sub">Освойте авторский метод Айсулу Абдигайповой за 11 дней — для самостоятельной работы и применения в консультировании</p>
+<p class="hero-date">Старт — <strong>1 ноября 2026 года</strong></p>
+<div class="hero-buttons"><a class="btn btn-primary" href="https://t.me/+7Zvtijw1WUg4MDgy" rel="noopener noreferrer" target="_blank">Перейти в предзапись<span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#program">Программа интенсива <span aria-hidden="true">↓</span></a></div>
+</div>
+<div aria-hidden="true" class="hero-art">
+<div class="arc arc-one"></div><div class="arc arc-two"></div>
+<span class="hero-art-number">11</span>
+<span class="hero-art-text">дней</span>
+<div class="hero-art-rule"></div>
+<span class="hero-art-title">Старт — 1 ноября 2026 года</span>
+</div>
+</div>
+</section>
+<section class="section section-author" id="author">
+<div class="container">
+<div class="section-head">
+<p class="kicker">Автор метода ЧакроРодология</p>
+<h2>Айсулу <em>Абдигайпова</em></h2>
+</div>
+<div class="author-layout">
+
+<ul class="bio-list"><li>В нумерологии с 2020 года, в преподавании — с 2023 года</li><li>Провела сотни консультаций</li><li>Обучила более 100 учеников ЧакроНумерологии с нуля</li><li>Внесла значительный вклад в развитие системы хронально-векторной диагностики (ХВД)</li><li>Разработала методы профориентации по дате рождения и анализа теневой стороны типологии</li><li>Создала курс «Дети в ЧакроНумерологии»</li><li>Разработала ЧакроРодологию — авторский метод, основанный на хронально-векторной диагностике и исследовании родовых сценариев через систему чакр</li></ul>
+</div>
+</div>
+</section>
+<section class="section section-audience" id="audience"><div class="container"><div class="section-head"><p class="kicker">Кому подойдёт интенсив «Карта Рода»</p><h2>Интенсив подойдёт тем, кто</h2></div>
+<ul class="audience-list"><li>Хочет разобраться, почему в жизни повторяются определённые ситуации</li><li>Сталкивается с финансовыми трудностями и хочет исследовать родовые сценарии, связанные с этой сферой</li><li>Испытывает сложности в личной жизни и хочет лучше понять себя и свои жизненные сценарии</li><li>Ищет своё предназначение, хочет раскрыть свои способности и понять, в какой сфере может реализовать свой потенциал</li><li>Сталкивается с трудностями в отношениях с родителями и хочет исследовать связь собственной истории с историей рода</li><li>Задумывается о наследственных заболеваниях и хочет разобраться, как эта тема рассматривается в ЧакроРодологии</li><li>Хочет понять, какой потенциал получил от предков и что сам передаёт следующим поколениям</li><li>Хочет освоить ЧакроРодологию для самостоятельной работы и лучшего понимания себя</li><li>Планирует изучить метод для дальнейшего консультирования клиентов</li><li>Уже консультирует по другому методу и хочет расширить свой профессиональный инструментарий</li></ul>
+</div></section>
+<section class="section section-program" id="program"><div class="container"><div class="section-head"><p class="kicker">Программа интенсива «Карта Рода»</p><h2>Расписание интенсива</h2></div>
+<div class="program-list"><article class="program-row"><div class="program-date">1–2 ноября</div><div class="program-content"><h3>Принцип родовой системы по ХВД</h3><p>Изучение принципов родовой системы в рамках хронально-векторной диагностики</p></div></article><article class="program-row"><div class="program-date">3–4 ноября</div><div class="program-content"><h3>Ресурсность по родовым задачам в карте рождения</h3><p>Как определять ресурсность, видеть, где человеку передался избыток энергии, а где дефицит</p></div></article><article class="program-row"><div class="program-date">5–6 ноября</div><div class="program-content"><h3>Род по отцу</h3><p>Изучение родовых задач по отцовской линии и их значения в карте рождения</p></div></article><article class="program-row"><div class="program-date">7–8 ноября</div><div class="program-content"><h3>Род по матери</h3><p>Изучение родовых задач по материнской линии и их значения в карте рождения</p></div></article><article class="program-row"><div class="program-date">9–10 ноября</div><div class="program-content"><h3>Задача Будущего воплощения</h3><p>Анализ задачи Будущего, понимание того, что человек передаёт следующим поколениям и какие сценарии могут продолжаться через него</p></div></article><article class="program-row"><div class="program-date">11 ноября</div><div class="program-content"><h3>Как консультировать по ЧакроРодологии</h3><p>Итоговая практическая работа, которая позволит показать, как вы усвоили метод и умеете применять его в консультировании</p></div></article></div>
+</div></section>
+<section class="section section-outcomes" id="outcomes"><div class="container"><div class="section-head"><p class="kicker">Программа интенсива «Карта Рода»</p><h2>Чему вы научитесь после интенсива</h2></div>
+<ul class="outcomes-list"><li>Читать родовые задачи через систему чакр по карте рождения</li><li>Определять ресурсность по родовым задачам и видеть, где проявляется избыток энергии, а где дефицит</li><li>Анализировать родовые задачи по отцовской и материнской линиям</li><li>Исследовать, как родовые сценарии могут отражаться на теле, психике, отношениях и жизненных ситуациях</li><li>Разбирать задачу Будущего воплощения и понимать, какой потенциал человек передаёт следующим поколениям</li><li>Связывать показатели между собой, анализировать карту рождения и формулировать выводы при консультировании</li></ul>
+</div></section>
+<section class="section section-reviews" id="reviews"><div class="container"><div class="section-head"><p class="kicker">ОТЗЫВЫ</p><h2>Что говорят те, кто уже изучил ЧакроРодологию</h2></div>
+<div class="reviews-copy">
+<p>Четыре потока интенсива — это опыт участников, их впечатления от обучения и открытия, которые они сделали для себя</p><p>Посмотрите, как участники оценивают обучение и что для них оказалось самым ценным</p>
+</div>
+<!-- Здесь можно разместить только реальные, согласованные отзывы и их изображения. -->
+</div></section>
+<section class="section section-format" id="format"><div class="container"><div class="section-head"><p class="kicker">Интенсив «Карта Рода»</p><h2>Формат обучения</h2></div>
+<div class="format-list"><p>Интенсив «Карта Рода» проходит в закрытом Telegram-канале в текстовом формате</p><p>Все материалы публикуются в виде текстовых публикаций и файлов, к которым можно возвращаться в течение срока доступа, предусмотренного вашим тарифом</p><p>В течение 11 дней вы последовательно пройдёте шесть тем — от принципов родовой системы по ХВД до итоговой практической работы по консультированию</p><p>Вам не нужно подстраивать свой график под онлайн-встречи или подключаться к Zoom. Вы изучаете материалы в удобное время, совмещая обучение с работой и повседневными делами</p><p>Вопросы по материалам разбираются сразу в общем чате — вам не нужно ждать отдельной встречи, чтобы получить разъяснения</p></div>
+</div></section>
+<section class="section section-tariffs" id="tariffs"><div class="container"><div class="section-head"><p class="kicker">Интенсив «Карта Рода»</p><h2>Тарифы участия</h2></div>
+<div class="price-grid"><article class="price-card tier-1">
+<div class="tier-top"><h3>Для себя</h3></div>
+<p class="price">5 900 ₽</p>
+<p class="tier-description">Для тех, кто хочет изучить ЧакроРодологию для себя, разобраться в родовых сценариях и применять полученные знания в личной работе</p>
+<p class="included">В тариф входит</p>
+<ul class="tier-list"><li>Доступ ко всем материалам интенсива</li><li>Текстовые материалы и файлы для самостоятельного изучения</li><li>Доступ к материалам в течение 2 месяцев</li><li>Самостоятельное изучение без обратной связи</li></ul>
+<a class="btn btn-outline tier-button" href="https://t.me/+7Zvtijw1WUg4MDgy" rel="noopener noreferrer" target="_blank">Перейти в предзапись<span aria-hidden="true">↗</span></a>
+</article><article class="price-card tier-2">
+<div class="tier-top"><h3>Практик</h3></div>
+<p class="price">7 900 ₽</p>
+<p class="tier-description">Для тех, кто хочет не только изучить ЧакроРодологию, но и получить поддержку в процессе обучения, разобраться в материале и подготовиться к применению метода в консультировании</p>
+<p class="included">В тариф входит</p>
+<ul class="tier-list"><li>Всё, что предусмотрено тарифом «Для себя»</li><li>Обратная связь в процессе интенсива</li><li>Возможность задавать вопросы по учебным материалам и получать разъяснения</li><li>Алгоритм проведения консультации по ЧакроРодологии</li><li>Примеры консультаций для понимания структуры и применения метода на практике</li><li>Дополнительные две недели обратной связи в общем чате после завершения интенсива — с 12 по 25 ноября 2026 года</li><li>Бессрочный доступ ко всем материалам интенсива</li><li>Итоговая практическая работа — первая консультация по ЧакроРодологии, в ходе которой участник демонстрирует умение применять метод на практике</li><li>Сертификат после выполнения итоговой практической работы</li></ul>
+<a class="btn btn-outline tier-button" href="https://t.me/+7Zvtijw1WUg4MDgy" rel="noopener noreferrer" target="_blank">Перейти в предзапись<span aria-hidden="true">↗</span></a>
+</article><article class="price-card tier-3">
+<div class="tier-top"><h3>Профессиональный старт</h3><p class="availability">Количество мест ограничено</p></div>
+<p class="price">9 900 ₽</p>
+<p class="tier-description">Для тех, кто хочет перейти от изучения метода к практическому применению, получить опыт консультирования и заявить о себе как о специалисте</p>
+<p class="included">В тариф входит</p>
+<ul class="tier-list"><li>Всё, что предусмотрено тарифом «Практик»</li><li>Самостоятельное проведение консультаций по ЧакроРодологии на реальных клиентах</li><li>Обратная связь от автора метода по результатам проведённых консультаций</li><li>Упоминание вашего блога в Stories автора в Instagram</li></ul>
+<a class="btn btn-outline tier-button" href="https://t.me/+7Zvtijw1WUg4MDgy" rel="noopener noreferrer" target="_blank">Перейти в предзапись<span aria-hidden="true">↗</span></a>
+</article></div>
+</div></section>
+<section class="section section-faq" id="faq"><div class="container"><div class="section-head"><p class="kicker">Интенсив «Карта Рода»</p><h2>Частые вопросы</h2></div>
+<div class="faq-list"><details open=""><summary>Нужно ли иметь специальную подготовку, чтобы пройти интенсив?<span aria-hidden="true" class="plus">+</span></summary><div class="answer"><p>Нет, интенсив подойдёт и тем, кто только начинает знакомство с ЧакроРодологией. Мы последовательно разберём основные темы метода — от принципов родовой системы по ХВД до анализа родовых задач и применения метода в консультировании</p></div></details><details><summary>Можно ли задавать вопросы во время обучения?<span aria-hidden="true" class="plus">+</span></summary><div class="answer"><p>На тарифе «Для себя» предусмотрено самостоятельное изучение материалов без обратной связи. Тарифы «Практик» и «Профессиональный старт» включают обратную связь в процессе интенсива и дополнительные две недели поддержки в общем чате после его завершения — с 12 по 25 ноября 2026 года</p></div></details><details><summary>Как долго будут доступны материалы?<span aria-hidden="true" class="plus">+</span></summary><div class="answer"><ul class="faq-bullets"><li>«Для себя» — 2 месяца</li><li>«Практик» — бессрочно</li><li>«Профессиональный старт» — бессрочно</li></ul></div></details><details><summary>Будет ли выдаваться сертификат?<span aria-hidden="true" class="plus">+</span></summary><div class="answer"><p>Сертификат предусмотрен для участников тарифов «Практик» и «Профессиональный старт» после выполнения итоговой практической работы — первой консультации по ЧакроРодологии</p></div></details><details><summary>Какой тариф выбрать?<span aria-hidden="true" class="plus">+</span></summary><div class="answer"><p>«Для себя» подойдёт тем, кто хочет самостоятельно изучить метод и применять знания для лучшего понимания себя</p><p>«Практик» — тем, кому важны обратная связь, алгоритм проведения консультации, примеры консультаций и подготовка к применению метода</p><p>«Профессиональный старт» — тем, кто дополнительно хочет проводить консультации на реальных клиентах с обратной связью автора метода и получить упоминание своего блога в Stories в Instagram</p></div></details></div>
+</div></section>
+<section class="section section-gift" id="join"><div class="container gift-layout">
+<div>
+<p class="kicker">Интенсив «Карта Рода»</p>
+<h2>Я приготовила для вас подарок <span aria-hidden="true">🎁</span></h2>
+<p>Многие знают, что я люблю удивлять своих учеников приятными сюрпризами. И на этот раз тоже кое-что задумала для тех, кто присоединится к предзаписи и затем приобретёт интенсив «Карта Рода»</p><p>Что именно — пока секрет 🤫</p>
+<p class="gift-date">Старт интенсива — 1 ноября 2026 года</p>
+<a class="btn btn-primary" href="https://t.me/+7Zvtijw1WUg4MDgy" rel="noopener noreferrer" target="_blank">Перейти в предзапись<span aria-hidden="true">↗</span></a>
+</div>
+<div aria-hidden="true" class="gift-decor"><span>Карта<br/>Рода</span></div>
+</div></section>
+</main>
+<footer class="footer">
+<div class="container footer-inner">
+<a class="footer-brand" href="#top">Карта Рода</a>
+<a class="back-to-top" href="#top">Наверх ↑</a>
+</div>
+</footer>
+<script>
+(function(){
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('.nav');
+if(!toggle||!nav)return;
+function close(){nav.classList.remove('is-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')}
+toggle.addEventListener('click',()=>{
+const opened=nav.classList.toggle('is-open');
+toggle.setAttribute('aria-expanded',String(opened));
+toggle.setAttribute('aria-label',opened?'Закрыть меню':'Открыть меню');
+});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+})();
+</script>
+</body>
+</html>
